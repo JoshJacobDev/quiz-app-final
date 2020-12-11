@@ -1,0 +1,122 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+@font-face {
+  font-family: pokemonSolid;
+  src: url(fonts/Pokemon\ Solid.ttf)
+}
+
+body {
+  background-color: #175676
+}
+
+main {
+  border: solid #eac435 5px;
+  background-color: #f05d5e
+}
+
+h1 {
+  font-family: pokemonSolid, serif;
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin: 25px auto 40px;
+  color: #EAC435;
+}
+
+p {
+  color: black;
+  font-family: Cambria, 'Times New Roman', serif;
+  font-size: 24px;
+  margin: auto;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  list-style: none;
+  width: 200px;
+  margin: 10px auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+img {
+  margin-top: 25px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+button {
+  margin: 20px auto;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  background-color: #EAC435
+}
+
+button:hover {
+  background-color: #175676;
+  color: white;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.pMargin {
+  margin: 30px auto 20px;
+}
+
+#submit-btn {
+  margin-bottom: 20px;
+}
+
+
+
+@media all and (min-width: 800px) {
+  body {
+    margin: auto;
+    width: 90%;
+  }
+  img {
+    width: 600px;
+  }
+}
+
+@media all and (min-width: 1050px) {
+  body {
+    margin: auto;
+    width: 70%;
+  }
+  img {
+    width: 600px;
+  }
+}
+
